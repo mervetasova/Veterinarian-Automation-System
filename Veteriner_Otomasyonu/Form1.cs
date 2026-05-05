@@ -16,7 +16,7 @@ namespace Veteriner_Otomasyonu
                 string sorgu = "SELECT H.hayvanID AS hayvanID, S.sahipID AS sahipID, " +
                                "(S.ad + ' ' + S.soyad) AS Sahip, S.telefon, S.e_posta, " +
                                "H.hayvanAd, H.tur, H.cins, H.cinsiyet, H.dogum_Tarihi " +
-                               "FROM Hayvanlar H INNER JOIN Sahip S ON H.sahipID = S.sahipID";
+                               "FROM Hayvanlar H INNER JOIN Sahip S ON H.sahipID = S.sahipID";        
 
                 SqlDataAdapter da = new SqlDataAdapter(sorgu, bag.baglanti());
                 DataTable dt = new DataTable();
